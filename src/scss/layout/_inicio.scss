@@ -39,7 +39,63 @@
 /*servicios*/
 
 
-.servicios{
+// .servicios{
+//     margin-top: 2rem;
+
+//     /*alineo los elementos dentro del div*/
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    justify-content: center; 
+
+//    h2{
+//     text-align: center;
+//     font-size: v.$bold;
+//     text-transform: uppercase;
+//    }
+// }
+
+.bg-gris{
+    background-color: v.$gris;
+    padding:0
+    // width: 100%;
+}
+.bg-grisOscuro{
+    background-color: v.$grisOscuro;
+}
+
+
+// .servicios-tipo{
+//     padding-bottom: 2rem;
+//     @include m.tablet {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         gap: 1rem;        
+//     }
+    
+// }
+
+// .servicio{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .servicio{
+//     .iconos{
+//         height: 20rem;
+//         width: 20rem;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         // border-radius: 50%;
+//         // background-color: v.$grisOscuro;
+//     }
+    
+// }
+
+
+.noticias{//inicio de section servicio
     margin-top: 2rem;
 
     /*alineo los elementos dentro del div*/
@@ -47,51 +103,47 @@
    flex-direction: column;
    align-items: center;
    justify-content: center; 
+}
+.titulo-general{
+    width: 100%;
+    
+    
+    h2{
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: v.$bold;
+    }
 
-   h2{
-    text-align: center;
-    font-size: v.$bold;
-    text-transform: uppercase;
-   }
 }
 
-.bg-gris{
-    background-color: v.$gris;
+.dark{
+    width: 100%;
 }
 
-
-
-.servicios-tipo{
+.servicios{
     padding-bottom: 2rem;
     @include m.tablet {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;        
     }
-    
 }
 
 .servicio{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.servicio{
-    .iconos{
-        height: 20rem;
-        width: 20rem;
+    .servicio-icono{
+        height: 17rem;
+        width: 17rem;
         display: flex;
         justify-content: center;
         align-items: center;
         // border-radius: 50%;
         // background-color: v.$grisOscuro;
     }
-    
 }
-
-
-
-
 
 

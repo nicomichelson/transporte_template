@@ -38,42 +38,60 @@
 
 /*servicios*/
 
+
 .servicios{
+    margin-top: 2rem;
 
-}
+    /*alineo los elementos dentro del div*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
 
-.seccion-servicios{
-    // background-color: v.$grisOscuro;
+   h2{
     text-align: center;
     font-size: v.$bold;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+   }
 }
 
-.servicio-imagen{
-    background-color: v.$grisOscuro;
-    // background-size: cover;
-    height: 5rem;
-    width: 5rem;
+.bg-gris{
+    background-color: v.$gris;
 }
 
-// .servicio-titulo{
-//     background-color: v.$gris;
-//     text-align: center;
-//     font-size: v.$bold;
-//     text-transform: uppercase;
+
+
+.servicios-tipo{
+    padding-bottom: 2rem;
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;        
+    }
     
-// }
+}
 
-// .servicio-tipos{
-//     background-color: v.$grisOscuro;
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-//     display: grid;
-//     grid-template-columns: repeat(1, 1fr);
-//     gap: 1rem;
-   
-//     @include m.tablet {
-        
-//         grid-template-columns: repeat(3, 1fr);
-        
-//     }
-// }
+.servicio{
+    .iconos{
+        height: 20rem;
+        width: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-radius: 50%;
+        // background-color: v.$grisOscuro;
+    }
+    
+}
+
+
+
+
+
+

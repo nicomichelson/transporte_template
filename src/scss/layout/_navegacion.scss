@@ -14,12 +14,19 @@
 }
 
 .navegacion{
-
-    display: none;
-
+    //menu burguer propieddes para ocultar
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    //fin
     @include m.tablet {
         display:flex;
         align-items: center;
+
+        //burger
+        opacity: 1;
+        visibility: visible;
     }
 
     a{
@@ -48,12 +55,14 @@
     }
 }
 
-.mostrar{
+.mostrar{//burguer
     // display: block;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
-    @include m.tablet {
-        flex-drection:row;
-    }
+    // @include m.tablet {
+    //     flex-drection:row;
+    // }
+    visibility: visible;
+    opacity: 1;
 }

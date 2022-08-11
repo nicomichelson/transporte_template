@@ -58,6 +58,8 @@
 }
 .bg-grisOscuro{
     background-color: v.$grisOscuro;
+    // padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 
@@ -76,11 +78,8 @@
 
 
 .contenedor-servicios{
-    padding-bottom: 2rem;
     @include m.tablet {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;        
+        @include m.grid(3, 2rem);
     }
 }
 

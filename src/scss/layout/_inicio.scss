@@ -42,21 +42,15 @@
 /*servicios*/
 
 
-// .servicios{
-//     margin-top: 2rem;
+.contenedor-servicios{
+    padding-top: 2rem;
+}
 
-//     /*alineo los elementos dentro del div*/
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: center; 
-
-//    h2{
-//     text-align: center;
-//     font-size: v.$bold;
-//     text-transform: uppercase;
-//    }
-// }
+@include m.tablet {
+    .servicios {
+        @include m.grid(3, 2rem);
+    }
+}
 
 .bg-gris{
     background-color: v.$gris;
@@ -78,7 +72,7 @@
    align-items: center;
    justify-content: center; 
 }
-.titulo-general{
+.servicios-titulo{
     width: 100%;
     
     

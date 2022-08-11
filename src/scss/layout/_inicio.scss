@@ -41,13 +41,12 @@
 
 /*servicios*/
 
-
-.contenedor-servicios{
+.servicios{
     padding-top: 2rem;
 }
 
 @include m.tablet {
-    .servicios {
+    .contenedor-servicios {
         @include m.grid(3, 2rem);
     }
 }
@@ -62,16 +61,6 @@
 }
 
 
-
-.noticias{//inicio de section servicio
-    margin-top: 2rem;
-
-    /*alineo los elementos dentro del div*/
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center; 
-}
 .servicios-titulo{
     width: 100%;
     
@@ -85,11 +74,8 @@
 
 }
 
-.dark{
-    width: 100%;
-}
 
-.servicios{
+.contenedor-servicios{
     padding-bottom: 2rem;
     @include m.tablet {
         display: grid;

@@ -15,26 +15,24 @@
 
 
 /*cards*/
-.seccion-card{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-   
-    @include m.tablet {
-        
-        grid-template-columns: repeat(3, 1fr);
-        
+
+
+
+@include m.tablet {
+    .cards {
+        //cuantas columnas y el espacio
+        @include m.grid(3, 1rem);
     }
 }
 
-.card{
-    // background-color: v.$gris;
-    // padding: 1rem;
-    
-
-}
-.card__imagen{
-    max-width: 100%;
+.card {
+    text-align: center;
+    img {
+        height: 23.6rem;
+    }
+    // h3 {
+    //     text-transform: uppercase;
+    // }
 }
 
 
@@ -99,23 +97,11 @@
 
 /*seccion noticias*/
 
-.seccion-noticias{
+.seccion-noticias, .seccion-cards{
     background-color: aquamarine;
 }
 
-.contenedor-noticias{
-     /*alineo los elementos dentro del div*/
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    @include m.tablet {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 1rem;    
-    }
-    
-}
+
 
 
 
@@ -135,3 +121,6 @@
         text-transform: uppercase;
     }
 }
+
+
+

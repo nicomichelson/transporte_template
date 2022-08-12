@@ -27,6 +27,7 @@
 
 .card {
     text-align: center;
+    
     img {
         height: 23.6rem;
     }
@@ -97,8 +98,13 @@
 
 /*seccion noticias*/
 
-.seccion-noticias, .seccion-cards{
+.seccion-noticias{
     background-color: aquamarine;
+    h1{
+        text-transform: uppercase;
+        font-size: v.$black;
+        text-align: start
+    }
 }
 
 
@@ -114,13 +120,21 @@
 
 .icono {
     text-align: center;
+
     img {
         height: 23.6rem;
     }
     h3 {
+        font-size: v.$black;
         text-transform: uppercase;
     }
 }
 
 
 
+/*borde*/
+.borde{
+    border-bottom: 1px solid v.$gris;
+    margin-bottom: 2.5rem;
+    
+}

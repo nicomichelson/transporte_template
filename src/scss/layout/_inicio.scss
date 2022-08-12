@@ -121,14 +121,15 @@
 
 @include m.tablet {
     .iconos-nosotros {
-        @include m.grid(3, 2rem);
+        //cuantas columnas y el espacio
+        @include m.grid(3, 1rem);
     }
 }
 
 .icono {
     text-align: center;
     img {
-        height: 20rem;
+        height: 23.6rem;
     }
     h3 {
         text-transform: uppercase;

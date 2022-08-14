@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"> -->
+   
+    <!--css slick carrousel-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+     <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <!-- FontAwesome -->
-  <link rel="stylesheet" href="build/img/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="build/img/plugins/fontawesome/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="build/css/app.css">
+   
     <title>Transporte_template</title>
 </head>
 
@@ -45,8 +54,18 @@
     <!-- seccion index -->
 
     <section class="contenedor seccion-slider">
-        <div class="slider">
-            <img class="slider-imagen" src="build/img/slider-main/bg1.jpg" alt="">
+        <div class="autoplay">
+            
+            <div>
+                <img src="build/img/slider-main/bg1.jpg" alt="">
+            </div>
+            <div>
+                <img src="build/img/slider-main/bg1.jpg" alt="">
+            </div>
+            <div>
+                <img src="build/img/slider-main/bg1.jpg" alt="">
+            </div>
+            
         </div>
     </section>
 
@@ -171,8 +190,11 @@
                 <!-- <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p> -->
             </div>
             <div class="icono">
-                <img src="build/img/news/noticia1.jpeg" alt="Icono Precio" loading="lazy">
-                <h3>Preciosdasdasdasdas fjsdklfsdf slmksdjflksdflk </h3>
+                <a href="#">
+                    <img src="build/img/news/noticia1.jpeg" alt="Icono Precio" loading="lazy">
+                </a>
+                
+                <h3>Preciosdas fjsdklfsdf slmksdjflksdflk </h3>
                 <!-- <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p> -->
             </div>
             <div class="icono">
@@ -182,12 +204,12 @@
             </div>
             <div class="icono">
                 <img src="build/img/news/noticia1.jpeg" alt="Icono Tiempo" loading="lazy">
-                <h3>A Tiempo</h3>
+                <h3>A Tiempo gjdklsgdslgk jklgds jkldgjlkdsg jdslkgj</h3>
                 <!-- <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p> -->
             </div>
             <div class="icono">
                 <img src="build/img/news/n1.png" alt="Icono Tiempo" loading="lazy">
-                <h3>A Tiempo fksdl;fms dsfopsdkf;s kpsdfsd</h3>
+                <h3>A Tiempoasasasfksdlfms dsfopsdkf;s kpsdfsd</h3>
                 <!-- <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p> -->
             </div>
         </div>
@@ -254,14 +276,36 @@
         </div>
     </div>
     
-    <!-- scripts-->
-    <script src="build/js/bundle.min.js"></script>
-    <!--.scripts-->
+    
 
     <!-- Google Map API Key-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
     <!-- Google Map Plugin-->
     <script src="plugins/google-map/map.js" defer></script>
+
+    <!-- scripts slick carrousel-->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		
+    
+
+    <!-- scripts-->
+    <script src="build/js/bundle.min.js"></script>
+    <!--.scripts-->
+
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script>-->
+
+    <script type="text/javascript">
+        $('.autoplay').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        });
+        // $('.single-item').slick();
+    </script> 
 
 </body>
 
